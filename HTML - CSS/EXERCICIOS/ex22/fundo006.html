@@ -3,21 +3,30 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Fundo fixo de tela</title>
     <style>
         body {
             height: 100vh;
-            background-color: black;
+           /* background-color: black;
             background-image: url(imagens/wallpaper002.jpg);
             background-position: center center;
             background-repeat: no-repeat;
-            background-size: cover;   /*COVER --> MUDA O TAMANHO DA IMAGEM PARA QUE ELA SEJA SEMPRE TOTALMENTE EXIBIDA NA TELA, SEM CORTES. (SENDO POSSIVEL USAR : AUTO, [LENGTH PX], [LENGTH %] E CONTAIN)*/
+            background-size: cover; */                 /*COVER --> MUDA O TAMANHO DA IMAGEM PARA QUE ELA SEJA SEMPRE TOTALMENTE EXIBIDA NA TELA, SEM CORTES. (SENDO POSSIVEL USAR : AUTO, [LENGTH PX], [LENGTH %] E CONTAIN)*/
+           /* background-attachment: fixed; */      /* PROPRIEDADE PARA CONFIGURAR O VINCULO (ATTACHMENT) DA IMAGEM DE FUNDO. A PROPRIEDADE ACEITA OS VALORES : [SCROLL(PADRAO)]= IMAGEM DE FUNDO ROLA JUNTO COM O CONTEÚDO / [FIXED]= IMAGEM DE FUNDO FIXA ENQUANTO O CONTEUDO VAI SENDO ROLADO*/ 
+            
+            /* SHORTHAND NA SEGUINTE ORDEM;
+            BACKGROUND COLOR > IMAGE > POSITION >
+            REPEAT > [SIZE] > ATTACHMENT
+            */
+
+            background: black url(imagens/wallpaper002.jpg) center center no-repeat fixed;
+            background-size: cover; /* POR ENQUANTO O SIZE NAO FUNCIONA NAS SHORTHANDS, SENDO NECESSARIO DECLARA-LO SEPARADO*/
 
         }
 
         main {
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
             border:  1px solid darkblue;
@@ -37,8 +46,16 @@
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Incidunt voluptatem quia ex excepturi dolores quas fugiat neque, aspernatur, eaque sint cum quod error aut fuga dolorem ad harum optio exercitationem.
             Lorem ipsum dolor, sit amet consectetur adipisicing elit. Possimus beatae esse illo in, cupiditate accusantium illum, tempore laborum aliquam corrupti ullam hic blanditiis quas sunt est perferendis voluptatum modi aliquid?
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam corporis iusto officia assumenda iste libero totam unde facere, esse repudiandae autem aspernatur odio repellat maiores provident blanditiis? Excepturi, dicta perspiciatis?
-           
-           
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio ipsam fugiat at animi magni minus vitae ipsum quia corporis nobis rerum neque illo maxime exercitationem iure, praesentium, magnam debitis aliquid.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum, aliquam. Doloremque tempore illum magnam quae atque! Nihil numquam, quidem libero explicabo dolores maiores assumenda cum, distinctio voluptas quisquam repellat atque.
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nesciunt atque numquam quod blanditiis optio et fugiat dolore laboriosam adipisci vitae sequi esse placeat nisi repellat, similique nostrum nihil sit cum?
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Iusto consequatur natus, saepe expedita ut voluptates magnam tenetur veritatis cupiditate repellendus cum numquam commodi minima quae perspiciatis temporibus voluptas nulla repellat.
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo qui fugit vitae, blanditiis neque numquam minima at placeat illo dicta ullam officia consequuntur reprehenderit quas repudiandae nam rem aliquam voluptatum.
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Autem quasi facere fugit nihil quo pariatur saepe voluptas optio! Perferendis suscipit cum facilis velit pariatur quis cupiditate commodi est ullam quas?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eaque praesentium quod facere amet illum exercitationem voluptatibus repellendus. Facere ratione esse, odit, quam modi itaque quo officia repudiandae temporibus officiis sapiente?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cumque vero recusandae deserunt vel saepe, pariatur nulla, obcaecati eum, tempora quibusdam eveniet quos atque. Incidunt quisquam adipisci quam culpa provident illo!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ad nobis, maiores libero suscipit doloribus dolores officiis quis adipisci culpa dolorum porro, repellendus deserunt inventore nemo soluta sunt omnis officia odio?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Suscipit reiciendis, expedita vero vel illo iusto. Cupiditate quas sed non mollitia magni fuga, animi minima nam eligendi consequatur. Corporis, impedit suscipit.
 
         </p>
     </main>
