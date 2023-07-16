@@ -1,5 +1,18 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family= Passion +One & display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family= Lugrasimo & display=swap') ;
+
+
+
+:root {
+    --fonte1: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte2: 'Passion One', cursiva;
+    --fonte3: 'Lugrasimo', cursiva;
+   
+}
+
 * {
     margin: 0px;
     padding: 0px;
@@ -8,17 +21,24 @@
 html, body {
     min-height: 100vh; /*TAMANHO MINIMO DO CORPO DO HTML, 100% DA ALTURA DA VH , (VW-> LARGURA)*/
     background-color: darkgray;
+    font-family: var(--fonte1);
+    
+    
 }
 
 header {
     background-color: black;
     color: white;
     text-align: center;
+    font-family: var(--fonte2);
+    
+    
 }
 
 header > h1 {
     padding-top: 50px;
     font-variant: small-caps; /* SMALL-CAPS SAO LETRAS MAISCULAS COM AS PRIMEIRAS MAIORES. [TEXT-TRANSFORM: UPPERCASE -> TODAS MAIUSCULAS, PARECE QUE ESTA GRITANDO..*/
+    
 }
 
 header > p {
@@ -40,6 +60,12 @@ section {
     padding-bottom: 10vh;
     line-height: 2em; /* ESPACAMENTO DUPLO ENTRE AS FRASES*/
     padding-left: 30px; /* COLOCAMOS AS LETRAS UM POUCO MAIS PARA DENTRO*/
+    font-family: 'Lugrasimo', cursiva;
+    
+}
+
+section > p {
+    padding-bottom: 2em;
 }
 
 section.normal {
@@ -50,13 +76,27 @@ section.normal {
 section.imagem {
     background-color: rgb(56, 54, 54);
     color: white;
+    box-shadow: inset 6px 6px 13px 0px rgba(0, 0, 0, 0.616); /*SOMBRA INTERNA NA SECTION IMAGEM*/
+    background-attachment: fixed; /*IMAGEM FIXA, EFEITO PARALLAX*/
+
 }
 
 section.imagem > p {  
-    width: 400px;
-    background-color: rgba(0, 0, 0, 0.404);
+    width: 200px;
+    background-color: rgba(0, 0, 0, 0.377);
+    text-shadow: 1px 1px 0px black;
 }
 
+section#img01 {
+    background-image: url(../imagens/background001.jpg); /* (..OS DOIS PONTOS SAO PARA VOLTAR NA PASTA ONDE ESTA A IMAGEM)*/
+    background-position: right center; /*A DIREITA E CENTRALIZADO*/
+    background-size: cover;
+}
+
+section#img02 {
+    background-image: url(../imagens/background002.jpg);
+    background-size: cover;
+}
 footer {
     background-color: black;
     color: white;
