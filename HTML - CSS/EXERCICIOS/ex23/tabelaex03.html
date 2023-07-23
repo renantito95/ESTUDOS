@@ -11,67 +11,86 @@
 
         table {
             border-collapse: collapse;
-            width: 300px;
         }
 
-        td {
-            border: 1px solid black;
+        caption {
+            font-size: 1.3em;
+            font-weight: bold;
             padding: 10px;
-            text-align: center;
         }
+
+        th, td {
+            border:  1px solid gray;
+            padding: 10px;
+        }
+
     </style>
+    
 </head>
 <body>
-    <h1>Dados com tabela</h1>
+    <h1>Exercício de tabelas</h1>
     <table>
-        <tr>
-            <td>Grupo</td>
-            <td colspan="3">Nomes</td>
-            <td colspan="3">Filmes</td>
-        </tr>
-        <tr>
-            <td rowspan="3">Mulheres</td>
-            <td colspan="3">Ana Maria Santos</td>
-            <td>Alien</td>
-            <td>Rambo</td>
-            <td>Vingadores</td>
-        </tr>
-        <tr>
-            <td colspan="3">Beatriz Souza</td>
-            <td>Hulk</td>
-            <td>Inception</td>
-            <td>Batman</td>
-        </tr>
-        <tr>
-            <td colspan="3">Claudia</td>
-            <td>Oblivion</td>
-            <td>Matrix</td>
-            <td>Big Hero</td>
-        </tr>
+        <caption>
+            Filmes Favoritos
+        </caption>
+        <thead>
+            <tr> <!--TODOS OS TH TEM QUE TER SCOPE-->
+                <th scope="col">Grupos</th> <!--O SCOPE DE GRUPOS ESTA EM COLUNAS-->
+                <th scope="col">Nomes</th> <!--O SCOPE DE NOMES ESTA EM COLUNA-->
+                <th colspan="3" scope="colgroup">Filmes</th> <!--FILME ESTA EM COLGROUP->CONJUNTO DE COLUNAS-->
 
-        <tr>
-            <td rowspan="3">Homens</td>
-            <td colspan="3">Bruno Mendonça</td>
-            <td>Intocáveis</td>
-            <td>Amnésia</td>
-            <td>Gladiador</td>
-        </tr>
-        <tr>
-            <td colspan="3">Daniel Lourenço</td>
-            <td>Wall-E</td>
-            <td>Oldboy</td>
-            <td>Dangal</td>
-        </tr>
-        <tr>
-            <td>Fabiano Mota</td>
-            <td>Star Wars</td>
-            <td>Taxi Drive</td>
-            <td>Toy Story</td>
-        </tr>
-        
-        
-        
+            </tr>
+
+        </thead>
+        <tfoot>
+            <tr> <!--TH TEM QUE TER SCOPE-->
+                <th colspan="4" scope="row"> Total</th> <!--SCOPE DE TOTAL É ROW->LINHA-->
+                <td>1000</td>
+            </tr>
+        </tfoot>
+        <tbody>
+            <tr> <!--TH TEM QUE TER SCOPE-->
+                <th rowspan="3" scope="rowgroup">Mulheres</th> <!--SCOPE DE MULHERES ESTA EM ROWGROUP-->
+                <td>Ana Maria Santos</td>
+                <td>Alien</td>
+                <td>Rambo</td>
+                <td>Vingadores</td>
+            </tr>
+            <tr>
+                <td>Beatriz Souza</td>
+                <td>Hulk</td>
+                <td>Inception</td>
+                <td>Batman</td>
+            </tr>
+            <tr>
+                <td>Claudia Melo</td>
+                <td>Oblivion</td>
+                <td>Matrix</td>
+                <td>Big Hero</td>
+            </tr>
+            <tr> <!--TH TEM QUE TER SCOPE-->
+                <th rowspan="3" scope="rowgroup">Homens</th> <!--SCOPE DE HOMENS ESTA EM ROWGROUP-->
+                <td>Bruno Mendonça</td>
+                <td>Intocáveis</td>
+                <td>América</td>
+                <td>Gladiador</td>
+            </tr>
+            <tr>
+                <td>Daniel Lourenço</td>
+                <td>Wall-E</td>
+                <td>Oldboy</td>
+                <td>Dangal</td>
+            </tr>
+            <tr>
+                <td>Fabiano Mota</td>
+                <td>Star Wars</td>
+                <td>Taxi Driver</td>
+                <td>Toy Story</td>
+            </tr>
+
+        </tbody>
     </table>
+    
     
 
     
