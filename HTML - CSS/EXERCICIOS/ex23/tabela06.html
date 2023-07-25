@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas Responsivas</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        table {
+            border-collapse: collapse;
+        }
+
+        caption {
+            font-size: 1.2em;
+            font-weight: bolder;
+            padding: 20px;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        tr:nth-child(even) {
+            background-color: rgb(228, 228, 228);
+        }
+
+        div#container {
+            overflow-x: auto; /*OVERFLOW-> CONTEUDO QUE TRANSBORDA. EXISTE OVERFLOW-Y=ROLAGEM VERTICAL OU OVERFLOW-X=ROLAGEM HORIZONTAL E OVERFLOW=QUE SAO OS DOIS EIXOS*/
+                }
+    </style>
+</head>
+<body>
+    <h1>Tabelas em telsa pequenas</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde delectus sunt tenetur explicabo? Pariatur eligendi minus dolorum ipsa officiis aut a, impedit fuga odit enim ratione cum alias consectetur quo?
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero dolores iste quisquam ut non dolorem aliquam velit a earum placeat, sed dicta. Aliquam numquam ipsam exercitationem, sint sit eligendi corrupti.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi accusantium deserunt nostrum itaque. Tempore, iusto iure, perspiciatis provident, alias sint aperiam deserunt ullam quaerat cumque asperiores cum id obcaecati. Molestias.
+    </p>
+    <div id="container"> <!--ENVELOPA A TABELA NO CONTAINER E DÁ UM OVERFLOW PARA FICAR RESPONSIVA-->
+        <table>
+            <caption>Tabelas responsivas</caption>
+            <thed>
+                <tr>
+                    <th>Produto</th>
+                    <th>Jan</th>
+                    <th>Fev</th>
+                    <th>Mar</th>
+                    <th>Abr</th>
+                    <th>Mai</th>
+                    <th>Jun</th>
+                    <th>Jul</th>
+                    <th>Ago</th>
+                    <th>Set</th>
+                    <th>Out</th>
+                    <th>Nov</th>
+                    <th>Dez</th>
+                </tr>
+            </thed>
+            <tbody>
+                <tr>
+                    <td>Tv</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Ipad</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Galaxy</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+                </tr>
+                <tr>
+                    <td>Lava Louças</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                   <td>11</td>
+                   <td>12</td>
+                </tr>
+                <tr>
+                    <td>PlayStation</td>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                    <td>7</td>
+                    <td>8</td>
+                    <td>9</td>
+                    <td>10</td>
+                    <td>11</td>
+                    <td>12</td>
+        
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    
+</body>
+</html>
