@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+</head>
+<body>
+    <h1>Meu primeiro formulário</h1>
+    <form action="cadastro.php" method="post"> <!--Action é para onde sera enviado o cadastro, e o botao de submit fara o resto do trablho. /Autocomplete'off' para desligar a sugestão /// Existem 2 metodos simples para envio de formulários. "POST e GET./ GET -> Metodo padrão, usamos quando os dados não for sensíveis,pode ser enviados até 3.000 bits (aprox. 3.000 letras). POST -> Usados para informações sensíveis, envio de fotos ou qualquer outro tipo de arquivo. Suporta mais de 3.000 bits. Nenhum dos dois é muito seguro, mais a frente estudar o metodo HTTPS."-->
+
+
+        <p><label for="inome">Nome:</label> <!--Para fazer a ligação do nome e da caixa, precisamos usar o LABEL=etiquetas. Para a linguagem PHP funcionar melhor com formulários, precisamos que todo Input,todo objeto de entrada tenha um nome. Então o NAME é mais útil para o HTML e PHP. No JS o ID é mais utilizado. //// Precisamos identificar todos os campos de entrada. /// Label-> Etiqueta /// For-> para quem? /// "inome"-> ID. /// Envelopa o "nome" com LABEL e coloca ID no for /// O label tem que estar relacionado ao imput, ao elemento para que o navegador saiba qual caixa está relacionada com qual label -->
+            <input type="text" name="nome" id="inome"></p> <!--input text é usado para colocar caixa de interação, para receber dados do usuário-->
+
+        <p><label for="isobrenome">Sobrenome:</label>
+             <input type="text" name="Sobrenome" id="isobrenome"></p>
+        
+        <p><input type="submit" value="Enviar"></p> <!--Submit, que siginifica submeter, enviar... é usado para colocar o botão de "Enviar". E dentro do value, coloque o que vai estar escrito dentro do botão-->
+    </form>
+</body>
+</html>
